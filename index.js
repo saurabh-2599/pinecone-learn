@@ -152,9 +152,9 @@ const studentInfo = `Alexandra Thompson, a 19-year-old computer science sophomor
 
 async function main(){
     //create a pinecone index
-    // const index = await createPineconeIndex('learn-pinecone')
+    const index = await createPineconeIndex('learn-pinecone')
     //upsert my data into pinecone
-    // const data = await upsertDataIntoPineconeIndex('learn-pinecone')
+    const data = await upsertDataIntoPineconeIndex('learn-pinecone')
    const ans = await questionAndAnswer("What does Alexandra Thompson like to do in her free time?")
    console.log(ans)
 }
